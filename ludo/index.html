@@ -1,0 +1,93 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Ludo Star Facebook Page with Background and Text
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #181818;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+    .background-container {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      opacity: 0.15;
+      pointer-events: none;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .background-container img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.3);
+    }
+    main, header {
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+ </head>
+ <body>
+  <div aria-hidden="true" class="background-container">
+   <img alt="Ludo board game pattern with dice and colored paths in blue and green and yellow and red" src="https://files.catbox.moe/4gf2hl.png"/>
+  </div>
+  <header class="flex items-center justify-between bg-[#1c1c1c] px-4 py-3 relative z-10">
+   <button aria-label="Facebook Home" class="text-white text-2xl font-bold flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-700">
+    <i class="fab fa-facebook-f">
+    </i>
+   </button>
+   <button aria-label="Menu" class="text-white text-2xl flex items-center justify-center w-9 h-9 rounded hover:bg-gray-700">
+    <i class="fas fa-bars">
+    </i>
+   </button>
+   <button aria-label="Game Controller" class="text-white text-xl flex items-center justify-center w-9 h-9 rounded-full hover:bg-gray-700 bg-[#2a2a2a]">
+    <i class="fas fa-gamepad">
+    </i>
+   </button>
+  </header>
+  <main class="flex-grow flex flex-col items-center px-6 pt-6 relative z-10 max-w-[320px] mx-auto w-full">
+   <div class="w-full max-w-[320px] rounded-md shadow-lg overflow-hidden">
+    <img alt="Screenshot of Ludo Star game interface showing a game board with dice and player tokens" class="w-full block" src="https://files.catbox.moe/7u67pe.jpg"/>
+   </div>
+   <p class="mt-4 text-gray-300 text-sm text-center leading-relaxed">
+    Play Ludo Star with your friends and family. Roll the dice, move your tokens, and be the first to get all your tokens home!
+   </p>
+   <p class="mt-6 text-[10px] text-gray-400 leading-tight text-center">
+    Ludo Star will receive this profile's name and profile picture. On Facebook, your friends and fellow players can see your gaming activity.
+    <i class="fas fa-pen-square">
+    </i>
+    Edit this
+   </p>
+   <div class="flex items-center justify-between w-full mt-6">
+    <span class="text-[13px] text-gray-400 font-semibold underline cursor-pointer">
+     MiniGame’s Privacy Policy
+    </span>
+    <button aria-label="Privacy Policy Link" class="bg-gray-600 hover:bg-gray-700 p-2 rounded-full text-white text-lg">
+     <i class="fas fa-link">
+     </i>
+    </button>
+   </div>
+   <a href="main.html" aria-label="Play on Facebook" class="mt-6 w-full bg-[#1877f2] hover:bg-[#165ec9] rounded-md py-3 flex items-center justify-center gap-2 text-white text-sm font-semibold no-underline">
+    <i class="fab fa-facebook-f">
+    </i>
+    Play on Facebook
+   </a>
+  </main>
+ </body>
+</html>
